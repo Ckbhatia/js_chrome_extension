@@ -1,2 +1,54 @@
 /* Importing Normalize css */
 @import url("normalize.css");
+
+/* Temp */
+body {
+    background-color: black;
+}
+/* Css variables */
+:root {
+    --textColor: white;
+    --bgColor: rgb(241, 28, 64);
+}
+
+
+.flash-card-section {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ /* Flash container */
+ .flash-card-container {
+     /* It must change randomly by js */
+    background-color:var(--bgColor);
+    border-radius: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.flash-card-text {
+    color: var(--textColor);
+    display: block;
+}
+
+/* Flash heading */
+.flash-card-heading {
+    padding: 0.2rem 1rem;
+    color: var(--textColor);
+}
+
+/* Flash paragraph */
+.flash-card-para {
+    color: var(--textColor);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Flas button */
+.flash-card-btn {
+    color: var(--textColor);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+}
