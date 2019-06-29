@@ -4,34 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Chrome</title>
-    <!-- External css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+    crossorigin="anonymous">
+    <title>Chrome</title>
   </head>
   <body>
+    <!-- Header -->
     <!-- Main -->
     <main class="main-container">
       <!-- Flash card container -->
       <section class="flash-card-section">
         <div class="flash-card-container">
+          <!-- Flash card top part -->
+          <div class="flash-card-top">
             <!-- Topic Text -->
             <span class="flash-card-text">
               <!-- TEMP Value -->
               CSS
             </span>
-            <h3 class="flash-card-heading">
-              <!-- TEMP Value-->
+            <!-- Settings icon -->
+            <span class="fas fa-cog flash-card-settings-icon">
+            </span>
+          </div>
+          <!-- Flash card middle part -->
+          <!-- Flash card settings -->
+          <div class="flash-card-settings-container">
+            <div class="flash-card-settings-menu" id="hidden">
+            <!-- Options -->
+              <label for="select-options">Category</label>
+              <select name="select" id="select-options">
+                <option class="option" value="all">ALL</option>
+                <option class="option" value="html">HTML</option>
+                <option class="option" value="css">CSS</option>
+                <option class="option" value="js">JavaScript</option>
+              </select>
+            </div>
+          </div>
+          <!-- Flash card bottom part -->
+          <div class="flash-card-bottom">
+            <h2 class="flash-card-heading">
+              <!-- TEMP -->
               Question!
               <!--  -->
-            </h3>
+            </h2>
             <p class="flash-card-para">
-              <!-- TEMP Value -->
+              <!-- TEMP -->
               You can select all selectors with universal selector * in css.
               It will apply the properties to all elements of html file.
             </p>
             <!-- Button -->
-            <input type="button" value="yes" class="flash-card-btn true">
-            <input type="button" value="no" class="flash-card-btn false">
+            <div class="flash-card-btn-container">
+              <div class="flash-card-btn-left">
+                <span class="flash-card-btn-question">
+                Did you know this?
+                </span>
+                <input type="button" value="Yes" id="true" class="flash-card-btn">
+                <!-- <input type="button" value="no" id="false" class="flash-card-btn"> -->
+              </div>
+              <div class="flash-card-btn-right">
+                <input type="button" value="Next" class="flash-card-btn-next">
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

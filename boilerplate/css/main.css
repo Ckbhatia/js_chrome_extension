@@ -18,19 +18,65 @@ body {
     margin: 0 auto;
 }
 
- /* Flash container */
- .flash-card-container {
-     /* It must change randomly by js */
+/* Flash container */
+.flash-card-container {
+    /* It must change randomly by js */
     background-color:var(--bgColor);
     border-radius: 0.5rem;
     width: 50%;
     margin: 0 auto;
 }
-
-.flash-card-text {
+/* Flash card top part */
+.flash-card-top {
+    display: flex;
+    justify-content: space-between;
     color: var(--textColor);
+    padding: 0.8rem;
+}
+
+/* Topic Text */
+.flash-card-text {
+    font-size: 1rem;
+    /* display: block; */
+    /* width: 99%; */
+}
+.flash-card-settings-icon {
+    padding: 0.5rem 1rem;
+    /* width: 1%; */
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Toggle class for settings */
+#hidden {
+    display: none;
+}
+#show {
     display: block;
 }
+/* Flash card middle part */
+/* Check it */
+.flash-card-settings-container {
+    position: relative;
+}
+.flash-card-settings-menu {
+    color: var(--textColor);
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+}
+/* Selection */
+#select-options {
+    background-color: rgb(207, 32, 67);
+    color: white;
+}
+#select-options:focus {
+    background-color: rgb(207, 32, 67);
+    border: 1px solid black;
+}
+
+/* Flash card bottom part */
 
 /* Flash heading */
 .flash-card-heading {
@@ -41,12 +87,40 @@ body {
 /* Flash paragraph */
 .flash-card-para {
     color: var(--textColor);
-    padding: 1rem 0;
-    text-align: center;
+    font-size: 0.8rem;
+    /* font-size: 14px; */
+    padding: 0.8rem 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+    word-spacing: 0.1rem;
+    /* text-align: center; */
 }
 
-/* Flas button */
+/* Flash btn question */
+.flash-card-btn-question {
+    color: var(--textColor);
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+}
+
+/* Flash buttons container */
+.flash-card-btn-container {
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
 .flash-card-btn {
+    color: var(--textColor);
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem;
+}
+.flash-card-btn:focus {
+    color: black;
+}
+/* Flash card next btn */
+.flash-card-btn-next {
     color: var(--textColor);
     background-color: transparent;
     border: none;
