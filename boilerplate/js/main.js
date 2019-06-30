@@ -161,7 +161,7 @@ btn.addEventListener('click', handleBtn);
 
 
 // Select Next button and store to nextBtn
-let nextBtn = document.querySelector('.flash-card-btn-next');
+let nextBtn = document.querySelector('.btn-next');
 // Event listener for click nextBtn
 nextBtn.addEventListener('click', function() {
     // Invoke runNow() function

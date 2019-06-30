@@ -115,14 +115,8 @@ body {
     background-color: transparent;
     border: none;
     padding: 0.5rem;
+    outline: 0;
 }
 .flash-card-btn:focus {
     color: black;
-}
-/* Flash card next btn */
-.flash-card-btn-next {
-    color: var(--textColor);
-    background-color: transparent;
-    border: none;
-    padding: 0.5rem;
 }
