@@ -69,9 +69,9 @@ let randomCard = (type) => {
     let length = cardDataCopy.length-1;
     // In Testing
     randomNum = Math.round(Math.random() * length);
-    if (cardDataCopy[randomNum].showData) {
+    // if (cardDataCopy[randomNum].showData || cardDataCopy[randomNum] ) {
         cardToshowData = cardDataCopy[randomNum].topic === type ? cardDataCopy[randomNum] : cardDataCopy[randomNum];
-    }
+    // }
     // Above part is in Testing
     // randomNum = Math.round(Math.random() * length);
     // In testing
@@ -92,12 +92,12 @@ let selectOption = document.querySelector('#select-options');
 let filterDataByTopic = (event) => {
     // Assign value to topic
     let topic = event.target.value;
-    console.log(topic, 'is selected');
+    console.log(topic, 'is selected, From filterDataByTopic');
     // Invoke runNow function
     cardDataCopy.forEach(item => console.log(item.topic));
 
     if (topic !== 'all') {
-        let fillData = cardDataCopy.filter(item => item.topic === topic);
+        let fillData = cardData.filter(item => item.topic === topic);
         console.log(fillData, "From filter function");
         console.log(`I'm from filter value of type is ${topic}`)
         // Re-assign cardDataCopy filtered array
