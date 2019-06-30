@@ -151,6 +151,8 @@ let handleBtn = (event) => {
     if (clickVal) {
         cardDataCopy[randomNum].showData = false;
         console.log(cardDataCopy[randomNum].showData);
+        // Invoke runNow function
+        runNow();
     }
 }
 
@@ -158,10 +160,11 @@ let handleBtn = (event) => {
 btn.addEventListener('click', handleBtn);
 
 
-// Next button
+// Select Next button and store to nextBtn
 let nextBtn = document.querySelector('.flash-card-btn-next');
 // Event listener for click nextBtn
 nextBtn.addEventListener('click', function() {
+    // Invoke runNow() function
     runNow();
     }
 );
