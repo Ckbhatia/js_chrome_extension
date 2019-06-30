@@ -158,6 +158,14 @@ let handleBtn = (event) => {
 btn.addEventListener('click', handleBtn);
 
 
+// Next button
+let nextBtn = document.querySelector('.flash-card-btn-next');
+// Event listener for click nextBtn
+nextBtn.addEventListener('click', function() {
+    runNow();
+    }
+);
+
 // DisplayData Function to modify the data of card
 let displayData = (data) => {
     topicText.innerText = data.topic;
