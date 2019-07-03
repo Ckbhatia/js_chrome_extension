@@ -69,15 +69,7 @@ let randomCard = (type) => {
     let length = cardDataCopy.length-1;
     // In Testing
     randomNum = Math.round(Math.random() * length);
-    // if (cardDataCopy[randomNum].showData || cardDataCopy[randomNum] ) {
         cardToshowData = cardDataCopy[randomNum].topic === type ? cardDataCopy[randomNum] : cardDataCopy[randomNum];
-    // }
-    // Above part is in Testing
-    // randomNum = Math.round(Math.random() * length);
-    // In testing
-    // console.log(cardDataCopy[randomNum].type == type);
-    // cardToshowData = cardDataCopy[randomNum].topic === type ? cardDataCopy[randomNum] : cardDataCopy[randomNum];
-    // console.log(`${cardDataCopy[randomNum].topic} Card selected, From randomCard`);
 }
 
 // Select the topic
@@ -110,34 +102,8 @@ let filterDataByTopic = (event) => {
         cardDataCopy = cardData;
         randomCard();
     }
-    // In test topic
-    // cardToshowData.topic === type ? displayData(filData) : randomCard(type);
-    // Check above second condition
-    // runNow();
 }
 
-// Below function isn't usefull, recommended to delete in future
-// // Check and compare the topic type
-// let handleType = (event) => {
-//     filterDataByTopic(event.target.value);
-    // switch(event.target.value) {
-    //     case 'html': {
-    //         filterDataByTopic('html');
-    //         break;
-    //     }
-    //     case 'css': {
-    //         filterDataByTopic('css');
-    //         break;
-    //     }
-    //     case 'js': {
-    //         filterDataByTopic('js');
-    //         break;
-    //     }
-    //     default: {
-    //         filterDataByTopic('all');
-    //     }
-    // }
-// }
 // Listen for select option selection
 selectOption.addEventListener('click', filterDataByTopic);
 
@@ -232,3 +198,5 @@ let toggleMenu = () => {
 }
 // Event listner on click
 settingsIcon.addEventListener('click', toggleMenu);
+
+
