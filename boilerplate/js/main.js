@@ -27,6 +27,12 @@ const cardData = [
         showData: true
     },
     {
+        topic: 'js',
+        question: 'What is the difference between an expression and a statement in JavaScript?',
+        text: 'There are two main syntactic categories in JavaScript: expressions and statements. A third one is both together, referred to as an expression statement. They are roughly summarized as: \'Expression: produces a value \'Statement: performs an action \'Expression statement: produces a value and performs an action',
+        showData: true
+    },
+    {
         topic: 'html',
         question: 'Can a web page contain multiple <header> elements? What about <footer> elements?',
         text: 'Yes to both. The W3 documents state that the tags represent the header(<header>) and footer(<footer>) areas of their nearest ancestor "section". So not only can the page <body> contain a header and a footer, but so can every <article> and <section> element.',
@@ -55,7 +61,61 @@ const cardData = [
         question: 'What is the difference between the equality operators == and ===?',
         text: 'Triple equals (===) checks for equality and does\'nt allow coersion, which means both the type and value must be the same ( Doesn\'t compare for truthy or falsy value). Double equals (==) on the other hand first performs type coercion so that both operands are of the same type and then applies comparison.',
         showData: true
-    }
+    },
+    {
+        topic: 'html',
+        question: 'What are some differences that XHTML has compared to HTML?',
+        text: 'Some of the key differences are\' An XHTML element must have an XHTML <DOCTYPE> Attributes values must be enclosed in quotes\'Attribute minimization is forbidden (e.g. one has to use checked="checked" instead of checked)\'Elements must always be properly nested\'Elements must always be closed\'Special characters must be escaped',
+        showData: true
+    },
+    {
+        topic: 'css',
+        question: 'What is the difference between em and rem units?',
+        text: 'Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.\' em units inherit their value from the font-size of the parent element\'rem units inherit their value from the font-size of the root element (html)\'n most browsers, the font-size of the root element is set to 16px by default.',
+        showData: true
+    },
+    {
+        topic: 'css',
+        question: "What is the difference between '+' and '~' sibling selectors?",
+        text: 'The General Sibling Selector ~ selects all elements that are siblings of a specified element. \' The Adjacent Sibling Selector + selects all elements that are the adjacent siblings of a specified element.',
+        showData: true
+    },
+    {
+        topic: 'css',
+        question: "What is a focus ring? What is the correct solution to handle them?",
+        text: 'A focus ring is a visible outline given to focusable elements such as buttons and anchor tags. It varies depending on the vendor, but generally it appears as a blue outline around the element to indicate it is currently focused. \' The best solution is an upcoming pseudo-selector :focus-visible which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.',
+        showData: true
+    },
+    {
+        topic: 'js',
+        question: "What is a callback?",
+        text: 'Callbacks are functions passed as an argument to another function to be executed once an event has occurred or a certain task is complete, often used in asynchronous code. Callback functions are invoked later by a piece of code but can be declared on initialization without being invoked.',
+        showData: true
+    },
+    {
+        topic: 'js',
+        question: "How do you clone an object in JavaScript?",
+        text: "Using the object spread operator ..., the object's own enumerable properties can be copied into the new object. \' Object.assign({}, obj) is another alternative.",
+        showData: true
+    },
+    {
+        topic: 'js',
+        question: "How do you compare two objects in JavaScript?",
+        text: "Even though two different objects can have the same properties with equal values, they are not considered equal when compared using == or ===. This is because they are being compared by their reference (location in memory), unlike primitive values which are compared by value. \' In order to test if two objects are equal in structure, a helper function is required. It will iterate through the own properties of each object to test if they have the same values, including nested objects. Optionally, the prototypes of the objects may also be tested for equivalence by passing true as the 3rd argument.",
+        showData: true
+    },
+    {
+        topic: 'js',
+        question: "What is event delegation?",
+        text: "Event delegation is a technique of delegating events to a single common ancestor. Due to event bubbling, events 'bubble' up the DOM tree by executing any handlers progressively on each ancestor element up to the root that may be listening to it.",
+        showData: true
+    },
+    {
+        topic: 'js',
+        question: "What is event delegation useful?",
+        text: "DOM events provide useful information about the element that initiated the event via Event.target. This allows the parent element to handle behavior as though the target element was listening to the event, rather than all children of the parent or the parent itself.",
+        showData: true
+    },
 ]; 
 
 // 2nd copy array for mutate the data
