@@ -1,37 +1,26 @@
-# Variables & Types
+# Flash Card
+This is a Flash Card app. It is built with javaScript, html and css.
+The aim of this app is to give a functionality to get the questions of their current learning. So, they can keep things in memory and It also helps to prepare for interview.
 
-The aim of the exercise we will be building a Chrome Extension using concepts like
+## Snapshot of the app
+
+![alt text](https://i.ibb.co/gZG7NCZ/Screenshot-202.png "Flash card")
+
+## How can I use this app?
+1. You have to clone this repo first.
+1. Open your chrome browser and extension, located in more settings.
+1. Turn on developer mode if not done already.
+1. Click on load unpacked option to load the extension.
+1. Go to the folder boilerplate where you cloned it.
+1. Choose the boilerplate folder to load it.
+1. That's it!
+1. Now open any new tab to see it.
+
+## What I learnt while building this app?
 * [ ] DOM
 * [ ] Events
 * [ ] Array Methods
 * [ ] LocalStoreage
 
-## Getting Started
-
-**Setup your project by following these instructions:**
-
-* [ ] Make your own copy by forking this exercise.
-* [ ] Go to the settings of the newly forked repo and add your mentor as a collaborator on the repo.
-* [ ] Make a clone of your forked repo.
-* [ ] Create a new branch called develop: `git checkout -b develop`.
-* [ ] Work on the exercise on your `develop` branch.
-* [ ] Push commits to `develop` branch ONLY. Command - `git push origin develop`.
-
-
-**After you are done.**
-
-* [ ] Submit a Pull Request to merge `develop` branch into the `master` branch of your repo. **Please don't merge your own pull request.**
-* [ ] Add your mentor as a reviewer on the PR.
-* [ ] The assigned mentor will review the exercise and pass feedback.
-* [ ] Once the mentor merges the PR to `master` branch, you are done with this exercise. Yay!
-
-## Goals 🎯
-* [ ] Use the boilerplate folder for the basic setup of the chrome extension.
-* [ ] List your functionalities and create them.
-
-## Steps To Run Chrome Extension 🛹
-* [ ] Open `Chrome` click on the menu on the right `setting` ➡️ `More Tools`  ➡️ `Extensions`
-* [ ] Switch On the `developer mode` on the right top corner.
-* [ ] Click on `load unpacked` on the left and select the `boilerplate` folder.
-* [ ] Now if you open a new tab you can see `Hello World!`
-* [ ] Cheers 💐 you are done. Start working with the respective files.
+### Author
+*Chetan Kumar*
